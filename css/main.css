@@ -57,6 +57,7 @@
 }
 
 #header .btn_menu p {
+    font-family: 'Cafe24Ssurround';
     font-size: 20px;
     line-height: 25px;
 }
@@ -72,6 +73,7 @@
 }
 
 .gnb {
+    font-family: 'Cafe24Ssurround';
     position: fixed;
     display: flex;
     left: -100%;
@@ -136,25 +138,30 @@
 
 .main_visual {
     height: 100vh;
+    background: url(../img/img_mainVisual.jpg)no-repeat center center/cover;
+    margin: 0 0 100px 0;
 }
 
-.main_visual::after {
-    content: '';
-    background-image: url(../img/icon_mainVisual.png);
-    background-repeat: no-repeat;
-    background-position: 50%;
+.main_visual .inner {
+    /* position: relative; */
+}
+
+.main_visual .inner img {
     position: absolute;
-    bottom: 0;
-    right: 50px;
-    display: block;
     width: 1013px;
     height: 647px;
-    background-size: contain;
+    top: 300px;
+    right: 50px;
+}
+
+.main_visual img {
+    width: 100%;
 }
 
 .main_visual .title {
+    font-family: 'Cafe24Ssurround';
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 20%;
     transform: translate(0, -50%);
 }
@@ -162,25 +169,217 @@
 .main_visual .title p {
     font-size: 30px;
     font-weight: 400;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
 }
 
 .main_visual .title h2 {
     font-size: 75px;
     font-weight: 400;
-    margin: 0 0 60px 0;
+    margin: 0 0 70px 0;
 }
 
 .main_visual .btn_box {
     width: 200px;
-    height: 70px;
     background: #293f3a;
     color: #fff;
     border-radius: 50px;
     font-size: 30px;
+    text-align: center;
+    display: inline-flex;
+    padding: 20px;
+}
 
+.main_visual .btn_box a {
+    margin: 0 10px 0 0;
+}
+
+/* ---------------main_diagnosis--------------- */
+
+.main_diagnosis {
+    margin: 0 0 100px 0;
+}
+
+.main_diagnosis .inner {
+    width: 1200px;
+    margin: 0 auto;
     text-align: center;
 }
+
+.main_diagnosis h2 {
+    font-family: 'Cafe24Ssurround';
+    font-size: 50px;
+    margin: 0 0 20px 0;
+}
+
+.main_diagnosis p {
+    font-family: 'Cafe24Ssurround';
+    font-size: 25px;
+    margin: 0 0 30px 0;
+}
+
+.main_diagnosis .content ul {
+    display: flex;
+    /* gap: 30px; */
+    justify-content: space-between;
+}
+
+.main_diagnosis ul li a {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.main_diagnosis ul li div {
+    width: 100px;
+    height: 100px;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    transition: 0.5s;
+    margin: 0 0 20px 0;
+}
+
+.main_diagnosis ul li span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.main_diagnosis ul li:hover div {
+    transform: translateY(-10px);
+}
+
+.main_diagnosis ul li:nth-child(1) div {
+    background: url(../img/icon_diagnosis01.png) no-repeat center center/cover;
+    background-size: 40px;
+}
+
+.main_diagnosis ul li:nth-child(2) div {
+    background: url(../img/icon_diagnosis02.png) no-repeat center center/cover;
+    background-size: 40px;
+}
+
+.main_diagnosis ul li:nth-child(3) div {
+    background: url(../img/icon_diagnosis03.png) no-repeat center center/cover;
+    background-size: 40px;
+}
+
+.main_diagnosis ul li:nth-child(4) div {
+    background: url(../img/icon_diagnosis04.png) no-repeat center center/cover;
+    background-size: 40px;
+}
+
+.main_diagnosis ul li:nth-child(5) div {
+    background: url(../img/icon_diagnosis05.png) no-repeat center center/cover;
+    background-size: 40px;
+}
+
+.main_diagnosis ul li:nth-child(6) div {
+    background: url(../img/icon_diagnosis06.png) no-repeat center center/cover;
+    background-size: 25px 45px;
+}
+
+.main_diagnosis ul li:nth-child(7) div {
+    background: url(../img/icon_diagnosis07.png) no-repeat center center/cover;
+    background-size: 40px;
+}
+
+.main_diagnosis ul li:nth-child(8) div {
+    background: url(../img/icon_diagnosis08.png) no-repeat center center/cover;
+    background-size: 40px;
+}
+
+.main_diagnosis ul li:nth-child(1):hover div {
+    background: url(../img/icon_diagnosis01-w.png) no-repeat center center/cover;
+    background-size: 40px;
+    background-color: #293f3a;
+}
+
+.main_diagnosis ul li:nth-child(2):hover div {
+    background: url(../img/icon_diagnosis02-w.png) no-repeat center center/cover;
+    background-size: 40px;
+    background-color: #293f3a;
+}
+
+.main_diagnosis ul li:nth-child(3):hover div {
+    background: url(../img/icon_diagnosis03-w.png) no-repeat center center/cover;
+    background-size: 40px;
+    background-color: #293f3a;
+}
+
+.main_diagnosis ul li:nth-child(4):hover div {
+    background: url(../img/icon_diagnosis04-w.png) no-repeat center center/cover;
+    background-size: 40px;
+    background-color: #293f3a;
+}
+
+.main_diagnosis ul li:nth-child(5):hover div {
+    background: url(../img/icon_diagnosis05-w.png) no-repeat center center/cover;
+    background-size: 40px;
+    background-color: #293f3a;
+}
+
+.main_diagnosis ul li:nth-child(6):hover div {
+    background: url(../img/icon_diagnosis06-w.png) no-repeat center center/cover;
+    background-size: 25px 45px;
+    background-color: #293f3a;
+}
+
+.main_diagnosis ul li:nth-child(7):hover div {
+    background: url(../img/icon_diagnosis07-w.png) no-repeat center center/cover;
+    background-size: 40px;
+    background-color: #293f3a;
+}
+
+.main_diagnosis ul li:nth-child(8):hover div {
+    background: url(../img/icon_diagnosis08-w.png) no-repeat center center/cover;
+    background-size: 40px;
+    background-color: #293f3a;
+}
+
+/* 고객 상담 */
+/* ---------------main_customer--------------- */
+
+.main_customer {
+    background: #f8f8f8;
+}
+
+.main_customer .inner {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+.main_customer .left {
+    width: 60%;
+}
+
+.main_customer .left .top {
+    display: flex;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 20px 0 0 20px;
+    background: #fff;
+}
+
+.main_customer .left .top li {
+    flex: 1;
+}
+
+.main_customer .left .top li a {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 40px;
+}
+
+.main_customer .left .top li a::after {
+    font-size: 20px;
+    content: "\e93f";
+    font-family: xeicon !important;
+    background: rgb(168, 168, 168);
+    border-radius: 50%;
+}
+
+
 
 
 * {
